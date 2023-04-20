@@ -2,7 +2,7 @@
 
 1.Create an empty folder on local folder where hugo website is.
 
-```
+```shell
 .github/workflows
 ```
 
@@ -89,8 +89,8 @@ jobs:
         uses: actions/deploy-pages@v2
 ```
 
-3. Go to github and create new repo
-4. Open settings on that repo, then navigate to *Pages*, under *Build and deployment* change source to **GitHub Actions**
+3. Go to github and create new repo.
+4. Open settings on that repo, then navigate to *Pages*, under *Build and deployment* change source to **GitHub Actions**.
 5. Open terminal then navigate to local folder where hugo website is.
 6. Input following command:
 
@@ -103,10 +103,10 @@ git branch -M main              # change the branch from master to main
 git remote add origin https://github.com/<USERNAME>/<REPONAME>.git    # add github repo that we make before
 git push -u origin main         # push change to github
 ```
-Wait for a minute and check the website, to know the url, navigate to Settings > Pages
+Wait for a minute and check the website, to know the url, navigate to Settings > Pages.
 
 
-nb: *for adding theme to hugo, can use the submodule instead clone*
+nb: *for adding theme to hugo, can use the submodule instead clone*.
 ```shell
 git submodule add <HUGO THEME REPO LINK> themes/<THEME NAME>   
 ```
